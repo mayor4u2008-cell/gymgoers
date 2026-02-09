@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Motivation</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80') 
+                        center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px black;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            text-shadow: 0 0 10px black;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 15px 35px;
+            background: #e60000;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff3333;
+        }
+
+        /* MOTIVATION CARDS */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 20px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            padding: 0 20px 20px;
+            color: #ccc;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #777;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Push Beyond Limits</h1>
+        <p>Your only competition is who you were yesterday.</p>
+        <a href="#motivation" class="btn">Get Motivated</a>
+    </div>
+
+    <!-- MOTIVATION SECTION -->
+    <div class="section" id="motivation">
+        <h2>Daily Motivation</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1600&q=80">
+                <h3>Stay Consistent</h3>
+                <p>Small progress every day leads to massive results over time.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518611012118-f0c5d1f1c3f3?auto=format&fit=crop&w=1600&q=80">
+                <h3>Strength is Earned</h3>
+                <p>Every rep, every set, every drop of sweat builds the new you.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1600&q=80">
+                <h3>No Excuses</h3>
+                <p>Your goals don’t care how you feel. Show up anyway.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Gym Motivation | Built for greatness
+    </footer>
+
+</body>
+</html>
